@@ -28,8 +28,10 @@ void loop(){
   //Lees de waarde van de potPin af.
   potmeterWaarde = analogRead(potPin);
   
+  //Print deze string en waarde.
   Serial.print("De waarde is nu");
   Serial.println(potmeterWaarde);
+  //Wacht 500 miliseconden.
   delay(500);
   
   //Schrijf een HIGH (aan) of LOW (uit) value naar de LED.
